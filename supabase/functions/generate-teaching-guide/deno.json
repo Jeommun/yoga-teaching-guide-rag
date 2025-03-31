@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "lib": ["deno.window", "deno.ns", "dom"],
+    "strict": true
+  },
+  "importMap": {
+    "imports": {
+      "https://deno.land/std@0.168.0/http/server.ts": "https://deno.land/std@0.168.0/http/server.ts",
+      "https://esm.sh/@supabase/supabase-js@2.39.0": "https://esm.sh/@supabase/supabase-js@2.39.0"
+    }
+  },
+  "tasks": {
+    "dev": "deno run --allow-net --allow-env --watch index.ts",
+    "deploy": "deno run --allow-net --allow-env index.ts"
+  }
+} 
